@@ -360,7 +360,10 @@ like \\='term-mode\\=', \\='shell-mode\\=' and \\='eshell-mode\\='."
   (setq mode-line-format
         thattem-shell-mode-line-format)
   ;; Set style
-  (setq thattem-mode-line--buffer-style 2))
+  (setq thattem-mode-line--buffer-style 2)
+  ;; Recalculate preserved height
+  (when (window-preserved-size)
+    (window-preserve-size nil nil t)))
 
 (defun thattem-help-mode-hook-function ()
   "A function called by the hook of help mode."
@@ -407,6 +410,7 @@ Make it not turn on display line numbers on help modes."
      #'thattem-mode-line--advice-around--display-line-numbers))
 
   (when thattem-window-actions-mode
+    (thattem-mode-line-mode)
     ;; Set keymap
     (thattem-window-actions-set-keymap)
     ;; Set window actions (display buffer actions)
