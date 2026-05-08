@@ -1,7 +1,7 @@
 ;;; Window-actions --- controls actions of window showing  -*- lexical-binding: t; -*-
 
 ;; Author: That Temperature <2719023332@qq.com>
-;; Package-Requires: (thattem-mode-line)
+;; Package-Requires: (cond-let thattem-mode-line)
 ;; URL: https://github.com/thattemperature/thattem-window-actions
 
 ;; This program is free software: you can redistribute it and/or modify
@@ -30,6 +30,7 @@
   :group 'convenience
   :group 'thattem)
 
+(require 'cond-let)
 (require 'thattem-mode-line)
 
 ;;; Define some classes of major mode.
