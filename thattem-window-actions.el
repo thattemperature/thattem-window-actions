@@ -311,7 +311,7 @@ Shell Buffer means buffer with major mode in \
     thattem-mode-line-fire-reverse
     thattem-mode-line-major-mode
     thattem-mode-line-file-dir
-    thattem-mode-line-end-space)
+    thattem-mode-line-end-space-bright)
   "Header line format for shell-like buffer."
   :type '(repeat (choice string symbol))
   :group 'thattem-window-actions)
@@ -324,7 +324,7 @@ Shell Buffer means buffer with major mode in \
 
 (defcustom thattem-help-header-line-format
   '("%e"
-    thattem-header-line-right-align
+    thattem-mode-line-header-right-align-bright
     thattem-mode-line-right-slant-reverse
     thattem-mode-line-line-and-column-number)
   "Header line format for help buffer."
@@ -336,7 +336,7 @@ Shell Buffer means buffer with major mode in \
     thattem-mode-line-buffer-name
     thattem-mode-line-right-slant
     thattem-mode-line-major-mode
-    thattem-mode-line-end-space)
+    thattem-mode-line-end-space-bright)
   "Mode line format for help buffer."
   :type '(repeat (choice string symbol))
   :group 'thattem-window-actions)
