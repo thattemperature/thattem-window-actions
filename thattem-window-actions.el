@@ -307,7 +307,7 @@ Shell Buffer means buffer with major mode in \
 (defcustom thattem-shell-header-line-format
   '("%e"
     thattem-mode-line-fire
-    thattem-mode-line-buffer-name
+    thattem-mode-line-buffer-name-right-truncate
     thattem-mode-line-fire-reverse
     thattem-mode-line-major-mode
     thattem-mode-line-file-dir
@@ -333,7 +333,7 @@ Shell Buffer means buffer with major mode in \
 
 (defcustom thattem-help-mode-line-format
   '("%e"
-    thattem-mode-line-buffer-name
+    thattem-mode-line-buffer-name-right-truncate
     thattem-mode-line-right-slant
     thattem-mode-line-major-mode
     thattem-mode-line-end-space-bright)
